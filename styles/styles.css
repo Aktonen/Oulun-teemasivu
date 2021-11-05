@@ -1,0 +1,191 @@
+#content {
+    display: flexbox;
+    display: grid;
+    grid-template-columns: 150px repeat(4,1fr);
+    grid-template-rows: auto auto 2fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    grid-column: 1/6;
+    grid-row: 1;
+    border: solid 1px black;
+}
+
+header img {
+    height: 80px;
+    padding: 10px;
+    filter: grayscale(100%);
+}
+
+nav {
+    width: 150px;
+    grid-column: 1;
+    grid-row: 2/4;
+    background-color: rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    border: solid 1px black;
+}
+
+.cities {
+    display: block;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.cities:hover {
+    background-color: rgb(235,210,120);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+nav h4 {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.brave {
+    grid-column: 2;
+    background-image: url("../images/cat.jpg");
+    background-size: cover;
+    height: 200px;
+    font-size: 30px;
+    border: solid 20px rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: end;
+    color: white;
+    padding-right: 10px;
+}
+
+.brave:hover {
+    border: solid 20px rgb(235,210,120)
+}
+
+.intelligent {
+    grid-column: 3;
+    background-image: url("../images/light.jpg");
+    background-size: cover;
+    height: 200px;
+    font-size: 30px;
+    border: solid 20px rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: end;
+    color: white;
+    padding-right: 10px;
+}
+
+.intelligent:hover {
+    border: solid 20px rgb(235, 130, 170)
+}
+
+.fair {
+    grid-column: 4;
+    background-image: url("../images/judge.jpg");
+    background-size: cover;
+    height: 200px;
+    font-size: 30px;
+    border: solid 20px rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: end;
+    color: white;
+    padding-right: 10px;
+}
+
+.fair:hover {
+    border: solid 20px rgb(115, 200, 227)
+}
+
+.responsible {
+    grid-column: 5;
+    background-image: url("../images/eco.jpg");
+    background-size: cover;
+    height: 200px;
+    font-size: 30px;
+    border: solid 20px rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: end;
+    color: white;
+    padding-right: 10px;
+}
+
+.responsible:hover {
+    border: solid 20px rgb(145, 200, 135)
+}
+
+article {
+    grid-column: 2/6;
+    grid-row: 3;
+    background-color: rgb(235,210,120);
+    border: solid 1px black;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(240,140,0);
+    border-radius: 5px;
+    overflow: hidden;
+    grid-row: 4;
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-template-rows: 30px auto;
+    border: solid 1px black;
+}
+
+p span {
+    display: block;
+    padding-left: 10px;
+    text-align: left;
+}
+footer h4 {
+    padding-left: 10px;
+}
+
+#käyntiosoite {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#kirjaamo {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#oulunKaupunki {
+    grid-column: 1;
+    padding-bottom: 0%;
+}
+
+#asiakaspalvelu {
+    grid-column: 2;
+    padding-bottom: 0%;
+}
+
+footer img {
+    height: 80px;
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 2;
+    position: absolute; right: 0%;
+    padding-top: 20px;
+    padding-right: 20px;
+}
