@@ -136,7 +136,7 @@ article {
     overflow: hidden;
     padding: 10px;
     text-align: justify;
-    font-size: 20px;
+    text-size-adjust: auto;
 }
 
 footer {
@@ -188,4 +188,107 @@ footer img {
     position: absolute; right: 0%;
     padding-top: 20px;
     padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #content {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 100px 20px 20px 20px 20px 1fr 150px;
+        height: 100vh;
+    }
+
+    header {
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    nav {
+        grid-row: 2/7;
+        grid-column: 1;
+    }
+    
+    footer {
+        grid-row: 7;
+        grid-column: 1/3;
+    }
+
+    article {
+        grid-row: 6;
+        grid-column: 2/3;
+    }
+
+    .brave {
+        background-image: none;
+        grid-column: 2/3;
+        grid-row: 2;
+        height: 20px;
+        background-color: rgb(235,210,120);
+        text-align: center;
+        border: none;
+        font-size: 1em;
+        color: black;
+        border: solid 2px black
+    }
+
+    .intelligent {
+        background-image: none;
+        grid-column: 2/3;
+        grid-row: 3;
+        height: 20px;
+        background-color: rgb(235,210,120);
+        text-align: center;
+        border: none;
+        font-size: 1em;
+        color: black;
+        border: solid 2px black
+    }
+    .fair {
+        background-image: none;
+        grid-column: 2/3;
+        grid-row: 4;
+        height: 20px;
+        background-color: rgb(235,210,120);
+        text-align: center;
+        border: none;
+        font-size: 1em;
+        color: black;
+        border: solid 2px black
+    }
+    .responsible {
+        background-image: none;
+        grid-column: 2/3;
+        grid-row: 5;
+        height: 20px;
+        background-color: rgb(235,210,120);
+        text-align: center;
+        border: none;
+        font-size: 1em;
+        color: black;
+        border: solid 2px black
+    }
+
+    .brave:hover {
+        background-color: rgb(240,140,0);
+        border: solid 2px rgb(185, 75, 10)
+    }
+
+    .intelligent:hover {
+        background-color: rgb(240,140,0);
+        border: solid 2px rgb(185, 75, 10)
+    }
+
+    .fair:hover {
+        background-color: rgb(240,140,0);
+        border: solid 2px rgb(185, 75, 10)
+    }
+
+    .responsible:hover {
+        background-color: rgb(240,140,0);
+        border: solid 2px rgb(185, 75, 10)
+    }
+
+    footer img {
+        display: none;
+    }
 }
