@@ -4,6 +4,7 @@
     grid-template-rows: auto auto 2fr auto;
     gap: 10px;
     height: 100vh;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -137,6 +138,16 @@ article {
     padding: 10px;
     text-align: justify;
     text-size-adjust: auto;
+}
+
+article div {
+    display: block;
+    padding: 10px;
+}
+
+article a {
+    display: block;
+    padding: 10px;
 }
 
 footer {
@@ -313,7 +324,6 @@ footer img {
     nav:hover > a {
         visibility: visible;
         font-size: 0.75em;
-
     }
     nav:hover h4 {
         visibility: visible;
